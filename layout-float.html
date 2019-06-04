@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>页面布局</title>
+  </head>
+  <style media="screen">
+    *{
+      padding: 0;
+      margin: 0
+    }
+    body{
+      font-size:16px
+    }
+    .header{
+      float: left;
+      background-color: rgb(51, 51, 51);
+      width:100%;
+      color: #fff;
+      index: 2
+    }
+    .header a{
+      display: inline-block;
+      text-decoration:none;
+      padding: 16px 18px;
+      color: #fff
+    }
+    .header a:hover{
+      background-color:#ccc;
+      color: #000
+    }
+    .header span{
+      font-size: 22px;
+      margin: 0 20px
+    }
+    .sidebar{
+      float:left;
+      width:15%;
+      background-color: rgb(158, 158, 158);
+      text-align: center
+    }
+    .sidebar ul li a{
+      text-decoration: none;
+      color: #000
+    }
+    .sidebar ul li {
+      padding: 20px 0
+    }
+    .sidebar ul li:hover a{
+      text-decoration: none;
+      color: #fff
+    }
+    .sidebar ul li:hover{
+      background-color: pink;
+    }
+    .content{
+      float: right;
+      width: 85%;
+      background-color: rgb(222, 253, 253);
+    }
+    .row{
+      margin: 20px;
+    }
+    .col{
+      width: 50%;
+      float: left;
+    }
+    .left-side{
+      background-color: #fff;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      padding: 15px
+    }
+    .right-side{
+      background-color: #fff;
+      margin-left: 10px;
+      margin-bottom: 20px;
+      padding: 15px
+    }
+    @media(max-width: 600px){
+      .col{
+        width: 100%
+      }
+      .left-side{
+        background-color: #fff;
+        margin-right: 0px;
+      }
+      .right-side{
+        background-color: #fff;
+        margin-left: 0px;
+      }
+    }
+      @media(max-width:1200px){
+        .header form button{
+          display: none
+        }
+        .header form input{
+          display: none
+        }
+      }
+  </style>
+  <body>
+    <div class="layout">
+      <div class="header">
+        <span>Myblog</span>
+        <a href="#">首页</a>
+        <a href="#">关注</a>
+        <a href="#">信息</a>
+        <a href="#" style="float:right;margin-right:35px">设置</a>
+        <form action="#" method="get" style="display:inline-block">
+          <input type="text" placeholder="请输入搜索内容" style="padding:5px;margin:0 0 0 500px">
+          <button type="submit" style="padding:5px">搜素</button>
+        </form>
+      </div>
+      <div class="container">
+        <div class="sidebar">
+          <ul>
+            <li><a href="#">文章</a></li>
+            <li><a href="#">空间</a></li>
+            <li><a href="#">装扮</a></li>
+            <li><a href="#">皮肤</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="row">
+            <div class="col">
+              <div class="left-side">
+                <h2>主区域内容</h2>
+                <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+                <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+                <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+                <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+                <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="right-side">
+                <h2>右侧栏</h2>
+                <p>菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  </body>
+</html>
